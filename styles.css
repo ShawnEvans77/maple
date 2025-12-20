@@ -1,0 +1,17 @@
+h1 {
+    color: orange;
+    text-align: center;
+}
+
+h2 {
+    color: green;
+}
+
+header {
+    text-align: center;
+    font-size: 30px;
+}
+
+body {
+    font-size: 16px;
+}
