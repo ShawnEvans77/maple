@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="styles.css" rel="stylesheet">
+    <title>maple</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+
+<!-- and it's easy to individually load additional languages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/go.min.js"></script>
+
+<script>hljs.highlightAll();</script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <ul>
+            <li>
+                <div class="logo"><a href="index.html">maple</a></div>
+            </li>
+            <li><a href="questions.html">questions</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="courses.html">courses</a></li>
+            <li><a href="solutions.html">solutions</a></li>
+
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <h2>fall 2020 question 2 🥞</h2>
+
+        <p>
+            An integer variable is assigned a value representing
+            inches. <p>
+            
+        <p>
+            Compute and print how many miles, yards, feet and inches that
+            number represents. The rules are: 1 foot equal 12 inches; 36 inches
+            equal 1 yard; 5280 feet equals 1 mile. For example,
+            245897 inches equals 3 miles 1550 yards 1 foot and 5 inches
+        </p>
+
+        <pre>
+            <code class="language-java">
+    public class Fall2020Question2 {
+        public static void main(String[] args) {
+            int inches = 245897;
+            int miles = inches / (5280*12);
+
+            int remainingYards = inches % (5280*12);
+            int yards = remainingYards / 36;
+
+            int remainingFeet = inches % 36;
+            int feet = remainingFeet / 12;
+            
+            int remainingInches = inches % 12;
+
+            System.out.printf("%d inches equals %d miles %d yards %d foot and %d inches\n", 
+            inches, miles, yards, feet, remainingInches);
+        }
+    }
+            </code>
+        </pre>
+
+        <!-- public class Fall2020Question2 {
+    public static void main(String[] args) {
+        int inches = 245897;
+        int miles = inches / (5280*12);
+
+        int remainingYards = inches % (5280*12);
+        int yards = remainingYards / 36;
+
+        int remainingFeet = inches % 36;
+        int feet = remainingFeet / 12;
+        
+        int remainingInches = inches % 12;
+
+        System.out.printf("%d inches equals %d miles %d yards %d foot and %d inches\n", 
+        inches, miles, yards, feet, remainingInches);
+    }
+    
+} -->
+
+    </main>
+
+
+
+</body>
+
+
+</html>
