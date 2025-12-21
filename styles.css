@@ -12,9 +12,10 @@ header {
     font-size: 30px;
 }
 
-body {
-    font-size: 16px;
-    margin-left: 20px;
+main {
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 img {
@@ -42,4 +43,5 @@ img {
 
 .navbar li {
     float: left;
+    font-size: 25px;
 }
