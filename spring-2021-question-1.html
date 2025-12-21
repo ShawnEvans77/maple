@@ -34,19 +34,31 @@
 
     <main>
 
-        <h2>fall 2020 question 5a 🥞</h2>
+        <h2>spring 2021 question 1 🥞</h2>
 
         <p>
-            Given 6 integers i,j,k,l,m and n all initialized and a method
-max3 which returns the largest of any 3 numbers, write one Java
-statement to find the maximum of the 6 integers using any
-combination of Math.max and max <p>
+            Write Java code to repeatedly print each single digit between 1 and 9 the number of
+times based upon its numeric value. Thus, you would get a triangle of the shape below where 1
+prints once, 2 twice … and 9 prints 9 times.
+ <p>
             
-
-
         <pre>
             <code class="language-java">
-    int max = Math.max(Math.max( Math.max(i, j), Math.max(k, l)), Math.max(m, n));
+    public class Spring2021Question1 {
+
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 9; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print(i);
+            }
+
+            System.out.println();
+        }
+
+    }
+    
+}
             </code>
         </pre>
 
