@@ -14,6 +14,7 @@ header {
 
 body {
     font-size: 16px;
+    margin-left: 20px;
 }
 
 img {
@@ -23,3 +24,22 @@ img {
     margin: auto;
 }
 
+.navbar ul {
+    list-style-type: none;
+    background-color: orange;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar li {
+    float: left;
+}
