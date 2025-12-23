@@ -8,6 +8,6 @@ Rather than contrived toy puzzles designed to confuse you, maple phrases its que
 
 The program uses React and Typescript. I plan to implement Monaco Editor with a Judge0 backend soon.
 
-The project is hosted at: cisc-1115.vercel.app
+The project is hosted at: https://cisc-1115.vercel.app/
 
 I used the pancake aesthetic because I love pancakes.
