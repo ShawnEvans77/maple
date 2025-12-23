@@ -10,8 +10,9 @@ function Home() {
         <header>
             <h1>maple🥞</h1>
             <p>a better way to prepare for your tests.</p>
-            <p>[ <Link to="/solutions">solutions</Link> ] [ <Link to="/questions">questions</Link> ] [ <Link to="/contact">contact</Link> ] 
-            [ <Link to="/notes">notes</Link> ]</p>
+            <p>[ <Link to="/solutions">solutions</Link> ] [ <Link to="/notes">notes</Link> ] 
+            [ <Link to="/questions">questions</Link> ] [ <Link to="/contact">contact</Link> ] 
+            </p>
         </header>
         <hr/>
 

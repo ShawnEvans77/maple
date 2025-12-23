@@ -14,6 +14,12 @@ import Spring2021Question5 from './Spring2021Question5'
 import Spring2021Question6 from './Spring2021Question6'
 import Spring2021Question7 from './Spring2021Question7'
 import Contact from './Contact'
+import Notes from './Notes'
+import Sorting from './Sorting'
+import BubbleSort from './BubbleSort'
+import SelectionSort from './SelectionSort'
+import InsertionSort from './InsertionSort'
+import QuickSort from './QuickSort'
 
 function App() {
 
@@ -42,6 +48,14 @@ function App() {
 
 
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/notes" element={<Notes/>} />
+        <Route path="/notes/sorting" element={<Sorting/>} />
+        <Route path="/notes/sorting/bubble" element={<BubbleSort/>} />
+        <Route path="/notes/sorting/selection" element={<SelectionSort/>} />
+        <Route path="/notes/sorting/insertion" element={<InsertionSort/>} />
+        <Route path="/notes/sorting/quick" element={<QuickSort/>} />
+
+
 
       </Routes>
       </main>
