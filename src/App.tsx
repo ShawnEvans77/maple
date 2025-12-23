@@ -20,6 +20,7 @@ import BubbleSort from './BubbleSort'
 import SelectionSort from './SelectionSort'
 import InsertionSort from './InsertionSort'
 import QuickSort from './QuickSort'
+import PageNotFound from './PageNotFound'
 
 function App() {
 
@@ -54,6 +55,8 @@ function App() {
         <Route path="/notes/sorting/selection" element={<SelectionSort/>} />
         <Route path="/notes/sorting/insertion" element={<InsertionSort/>} />
         <Route path="/notes/sorting/quick" element={<QuickSort/>} />
+
+        <Route path="*" element={<PageNotFound/>} />
 
 
 

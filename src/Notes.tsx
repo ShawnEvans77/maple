@@ -1,5 +1,6 @@
 import './App.css'
 import { Link } from 'react-router-dom'
+import image from './assets/pancake_5.png'
 
 
 function Notes() {
@@ -19,6 +20,9 @@ function Notes() {
 
         </ol>
         </div>
+        <hr/>
+
+        <img src={image}></img>
         </main>
         
     )
