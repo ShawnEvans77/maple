@@ -15,7 +15,7 @@ function Home() {
         </header>
         <hr/>
 
-        <h2>Abstract</h2>
+        <h2>abstract</h2>
 
         <p> 
             maple is a free, open-source platform whose stated goal is to help Brooklyn College computer science students improve their grades. 
@@ -25,7 +25,7 @@ function Home() {
             it won't be big and professional like Hackerrank.
         </p>
 
-        <h2>Content</h2>
+        <h2>content</h2>
 
         <p>This platform will contain material such as the following:</p>
 
@@ -39,14 +39,14 @@ function Home() {
         <p>maple's resources are useful rather than unecessarily complicated questions that ask you to guess the result of several nested method calls.</p>
 
 
-        <h2>Prepare Better</h2>
+        <h2>prepare better</h2>
 
         <p>
             Use this as one of many resources to become a cracked developer capable of solving the world's hardest problems.
             If you use this website, you should be well equipped to pass all of your programming classes with little to no difficulty. 
         </p>
 
-        <h2>Navigation</h2>
+        <h2>navigation</h2>
 
         <ol>
             <li><Link to="/solutions">solutions</Link></li>
