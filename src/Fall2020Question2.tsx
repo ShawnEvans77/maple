@@ -1,7 +1,7 @@
 import './App.css'
 import "highlight.js/styles/default.css";
 import hljs from "highlight.js";
-import { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 
 
 
