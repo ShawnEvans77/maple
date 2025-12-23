@@ -1,44 +1,28 @@
-<!DOCTYPE html>
+import './App.css'
+import "highlight.js/styles/default.css";
+import hljs from "highlight.js";
+import { useEffect, useRef } from 'react'
 
-<html lang="en">
 
-<head>
-    <link href="styles.css" rel="stylesheet">
-    <title>maple</title>
-    <link rel="icon" type="image/x-icon" href="icon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
 
-<!-- and it's easy to individually load additional languages -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/go.min.js"></script>
+function Fall2020Question2() {
 
-<script>hljs.highlightAll();</script>
-</head>
+    useEffect(() => {
+        hljs.highlightAll();
+    }, [])
 
-<body>
+    return (
 
-    <nav class="navbar">
+        <main>
 
-        <ul>
-            <li>
-                <div class="logo"><a href="index.html">maple</a></div>
-            </li>
-            <li><a href="solutions.html">solutions</a></li>
-            <li><a href="questions.html">questions</a></li>
-            <li><a href="contact.html">contact</a></li>
-            <li><a href="notes.html">notes</a></li>
+            <h2>fall 2020 question 7 🥞</h2>
 
-        </ul>
+            <hr/>
 
-    </nav>
-
-    <main>
-
-        <h2>fall 2020 question 7 🥞</h2>
-
-        <pre>
-            <code class="language-java">
-import java.util.Scanner;
+            <pre>
+                <code className="language-java">
+                {
+                `import java.util.Scanner;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.File;
@@ -61,7 +45,7 @@ public class Fall2020Question7 {
         writer.println();
 
         for (int i = 0; i < numSalesRep; i++) {
-            writer.printf("%10s %10.2f\n", names[i], averageTripLength[i]);
+            writer.printf("%10s %10.2f\\n", names[i], averageTripLength[i]);
         }
 
         writer.close();
@@ -181,34 +165,12 @@ public class Fall2020Question7 {
             }
         }
     }
+}`}
+                </code>
+            </pre>
+
+        </main>
+    )
 }
-            </code>
-        </pre>
 
-        <!-- public class Fall2020Question2 {
-    public static void main(String[] args) {
-        int inches = 245897;
-        int miles = inches / (5280*12);
-
-        int remainingYards = inches % (5280*12);
-        int yards = remainingYards / 36;
-
-        int remainingFeet = inches % 36;
-        int feet = remainingFeet / 12;
-        
-        int remainingInches = inches % 12;
-
-        System.out.printf("%d inches equals %d miles %d yards %d foot and %d inches\n", 
-        inches, miles, yards, feet, remainingInches);
-    }
-    
-} -->
-
-    </main>
-
-
-
-</body>
-
-
-</html>
+export default Fall2020Question2

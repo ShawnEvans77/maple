@@ -1,45 +1,26 @@
-<!DOCTYPE html>
+import './App.css'
+import "highlight.js/styles/default.css";
+import hljs from "highlight.js";
+import { useEffect } from 'react'
 
-<html lang="en">
+function Spring2021Question7() {
 
-<head>
-    <link href="styles.css" rel="stylesheet">
-    <title>maple</title>
-    <link rel="icon" type="image/x-icon" href="icon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+    useEffect(() => {
+        hljs.highlightAll();
+    }, [])
 
-<!-- and it's easy to individually load additional languages -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/go.min.js"></script>
+    return (
 
-<script>hljs.highlightAll();</script>
-</head>
-
-<body>
-
-    <nav class="navbar">
-
-        <ul>
-            <li>
-                <div class="logo"><a href="index.html">maple</a></div>
-            </li>
-            <li><a href="solutions.html">solutions</a></li>
-            <li><a href="questions.html">questions</a></li>
-            <li><a href="contact.html">contact</a></li>
-            <li><a href="notes.html">notes</a></li>
-
-        </ul>
-
-    </nav>
-
-    <main>
+        <main>
 
         <h2>spring 2021 question 7 🥞</h2>
 
-            
-        <pre>
-            <code class="language-java">
-import java.util.Scanner;
+        <hr/>
+     
+            <pre>
+                <code className="language-java">
+                {
+                `import java.util.Scanner;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -60,9 +41,9 @@ public class Spring2021Question7 {
 
         PrintWriter writer = new PrintWriter("spring_2021_output.txt");
 
-        writer.printf("%-15s%s\n", "Neighborhood", "Avg Price");
+        writer.printf("%-15s%s\\n", "Neighborhood", "Avg Price");
         for (int i = 0; i < 3; i++) {
-            writer.printf("%-15s%9.2f\n", neighborhoods[i], averagePrices[i]);
+            writer.printf("%-15s%9.2f\\n", neighborhoods[i], averagePrices[i]);
         }
 
         writer.close();
@@ -173,33 +154,12 @@ public class Spring2021Question7 {
     }
 
 }
-            </code>
-        </pre>
+ `}
+                </code>
+            </pre>
 
-        <!-- public class Fall2020Question2 {
-    public static void main(String[] args) {
-        int inches = 245897;
-        int miles = inches / (5280*12);
+        </main>
+    )
+}
 
-        int remainingYards = inches % (5280*12);
-        int yards = remainingYards / 36;
-
-        int remainingFeet = inches % 36;
-        int feet = remainingFeet / 12;
-        
-        int remainingInches = inches % 12;
-
-        System.out.printf("%d inches equals %d miles %d yards %d foot and %d inches\n", 
-        inches, miles, yards, feet, remainingInches);
-    }
-    
-} -->
-
-    </main>
-
-
-
-</body>
-
-
-</html>
+export default Spring2021Question7
