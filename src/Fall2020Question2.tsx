@@ -3,8 +3,6 @@ import "highlight.js/styles/default.css";
 import hljs from "highlight.js";
 import { useEffect } from 'react'
 
-
-
 function Fall2020Question2() {
 
     useEffect(() => {
