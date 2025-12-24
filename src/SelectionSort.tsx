@@ -1,27 +1,16 @@
 import './App.css'
-import "highlight.js/styles/default.css";
-import hljs from "highlight.js";
-import { useEffect } from 'react'
-
+import Solution from './Solution'
 
 function SelectionSort() {
 
-    useEffect(() => {
-        hljs.highlightAll();
-    }, [])
-
     return (
 
-        <main>
+    <Solution
 
-            <h2>selection sort 🥞</h2>
-
-            <hr/>
-
-            <pre>
-                <code className="language-java">
-                {
-                `public class SelectionSort {
+    name="selection sort 🥞"
+    question={<></>}
+    code=
+{`public class SelectionSort {
     /**
      * Simply look for the smallest number smaller than nums[i]. Then swap. Repeat until the end of the list.
      * @param nums
@@ -44,10 +33,9 @@ function SelectionSort() {
     }
 
 }`}
-                </code>
-            </pre>
 
-        </main>
+    />
+              
     )
 }
 

@@ -1,27 +1,15 @@
 import './App.css'
-import "highlight.js/styles/default.css";
-import hljs from "highlight.js";
-import { useEffect } from 'react'
-
+import Solution from './Solution'
 
 function BubbleSort() {
 
-    useEffect(() => {
-        hljs.highlightAll();
-    }, [])
-
     return (
 
-        <main>
+    <Solution
 
-            <h2>bubble sort 🥞</h2>
-
-            <hr/>
-
-            <pre>
-                <code className="language-java">
-                {
-                `public class BubbleSort {
+    name="bubble sort 🥞"
+    question={<></>}
+    code={`public class BubbleSort {
     /**
      * Bubble sort: Given [10, 9, -1, -2]
      * On the first iteration, 10 "bubbles to the end". On the second iteration, 9 "bubbles to the end". And so on.
@@ -43,10 +31,9 @@ function BubbleSort() {
         }
     }
 }`}
-                </code>
-            </pre>
 
-        </main>
+    />
+              
     )
 }
 

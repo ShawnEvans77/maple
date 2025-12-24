@@ -21,6 +21,7 @@ import SelectionSort from './SelectionSort'
 import InsertionSort from './InsertionSort'
 import QuickSort from './QuickSort'
 import PageNotFound from './PageNotFound'
+import HeapSort from './HeapSort'
 
 function App() {
 
@@ -55,6 +56,7 @@ function App() {
         <Route path="/notes/sorting/selection" element={<SelectionSort/>} />
         <Route path="/notes/sorting/insertion" element={<InsertionSort/>} />
         <Route path="/notes/sorting/quick" element={<QuickSort/>} />
+        <Route path="/notes/sorting/heap" element={<HeapSort/>} />
 
         <Route path="*" element={<PageNotFound/>} />
         

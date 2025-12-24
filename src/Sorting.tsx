@@ -18,6 +18,7 @@ function Sorting() {
             <li><Link to="selection">selection sort</Link></li>
             <li><Link to="insertion">insertion sort</Link></li>
             <li><Link to="quick">quick sort</Link></li>
+            <li><Link to="heap">heap sort</Link></li>
 
         </ol>
         </div>

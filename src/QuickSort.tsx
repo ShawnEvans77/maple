@@ -1,26 +1,15 @@
 import './App.css'
-import "highlight.js/styles/default.css";
-import hljs from "highlight.js";
-import { useEffect } from 'react'
+import Solution from './Solution'
 
 function QuickSort() {
 
-    useEffect(() => {
-        hljs.highlightAll();
-    }, [])
-
     return (
 
-        <main>
+    <Solution
 
-            <h2>quick sort 🥞</h2>
-
-            <hr/>
-
-            <pre>
-                <code className="language-java">
-                {
-                `public class QuickSort {
+    name="quick sort 🥞"
+    question={<></>}
+    code={`public class QuickSort {
 
     public static void quickSort(int[] nums) {
         int start = 0;
@@ -57,10 +46,9 @@ function QuickSort() {
     }
 
 }`}
-                </code>
-            </pre>
 
-        </main>
+    />
+              
     )
 }
 

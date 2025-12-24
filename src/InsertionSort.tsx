@@ -1,27 +1,16 @@
 import './App.css'
-import "highlight.js/styles/default.css";
-import hljs from "highlight.js";
-import { useEffect } from 'react'
-
+import Solution from './Solution'
 
 function InsertionSort() {
 
-    useEffect(() => {
-        hljs.highlightAll();
-    }, [])
-
     return (
 
-        <main>
+    <Solution
 
-            <h2>bubble sort 🥞</h2>
-
-            <hr/>
-
-            <pre>
-                <code className="language-java">
-                {
-                `public class InsertionSort {
+    name="selection sort 🥞"
+    question={<></>}
+    code=
+{`public class InsertionSort {
     /**
      * It's like a deck of cards.... you shift elements rightward to insert things in its proper place.
      * [9,7,4,2,1]
@@ -51,10 +40,9 @@ function InsertionSort() {
 
     } 
 }`}
-                </code>
-            </pre>
 
-        </main>
+    />
+              
     )
 }
 
