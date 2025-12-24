@@ -1,33 +1,27 @@
 import './App.css'
-import "highlight.js/styles/default.css";
-import hljs from "highlight.js";
-import { useEffect } from 'react'
+import Solution from './Solution'
+
 
 function Spring2021Question5() {
 
-    useEffect(() => {
-        hljs.highlightAll();
-    }, [])
-
     return (
 
-        <main>
+        <Solution
 
-            <h2>spring 2021 question 5 🥞</h2>
+        name="spring 2021 question 5 🥞"
 
-            <hr/>
-     
-        <p>You are playing a game that has two dice – one die has 6 sides numbered 1 through 6 and the 
+        question={
+        <>You are playing a game that has two dice – one die has 6 sides numbered 1 through 6 and the 
             second die has 8 sides numbered 1 through 8. A turn involves rolling both die together.
              Write Java code to play 1,000 turns and keep track of the sum of the two dice in each roll i.e, 
             (2 through 14). When all 1,000 turns have been completed, 
             print a formatted table showing the value of the sum of the two dice (2 through 14) and 
-            the number of times that value occurred.</p>
+            the number of times that value occurred.</>
+        }
 
-            <pre>
-                <code className="language-java">
-                {
-                `public class Spring2021Question5 {
+        code=
+{
+`public class Spring2021Question5 {
     public static void main(String[] args) {
         final int NUM_ROLLS = 1000;
         final int MAX_ROLL = 14;
@@ -50,10 +44,9 @@ function Spring2021Question5() {
         }
     }
 }`}
-                </code>
-            </pre>
 
-        </main>
+    />
+
     )
 }
 

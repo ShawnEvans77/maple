@@ -1,33 +1,27 @@
 import './App.css'
-import "highlight.js/styles/default.css";
-import hljs from "highlight.js";
-import { useEffect } from 'react'
+import Solution from './Solution'
 
-function Spring2021Question2() {
-
-    useEffect(() => {
-        hljs.highlightAll();
-    }, [])
+function Spring2021Question7() {
 
     return (
 
-        <main>
+        <Solution
+        
+        name="spring 2021 question 2 🥞"
 
-            <h2>spring 2021 question 2 🥞</h2>
+        question={
+        <>
+        Write Java code to read strings of lower-case letters from the keyboard and count the
+        number of vowels in each word. (vowels are a,e,i,o and u). When all strings have been read in,
+        print the string that has the largest number of vowels (duplicates included) and how many vowels
+        were in the string. When more than one string has the greatest number of vowels, print the first
+        string found with that number. For example, with input of she groceries yourselves here
+        radio, the correct answer would be: groceries – 4 vowels.
+        </>
+        }
 
-            <hr/>
-     
-        <p>Write Java code to read strings of lower-case letters from the keyboard and count the
-number of vowels in each word. (vowels are a,e,i,o and u). When all strings have been read in,
-print the string that has the largest number of vowels (duplicates included) and how many vowels
-were in the string. When more than one string has the greatest number of vowels, print the first
-string found with that number. For example, with input of she groceries yourselves here
-radio, the correct answer would be: groceries – 4 vowels.</p>
-
-            <pre>
-                <code className="language-java">
-                {
-                `import java.util.Scanner;
+        code = {
+`import java.util.Scanner;
 public class Spring2021Question2 {
     public static void main(String[] args) {
 
@@ -64,11 +58,10 @@ public class Spring2021Question2 {
     }
 
 }`}
-                </code>
-            </pre>
 
-        </main>
+    />
+        
     )
 }
 
-export default Spring2021Question2
+export default Spring2021Question7

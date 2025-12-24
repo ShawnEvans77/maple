@@ -57,9 +57,7 @@ function App() {
         <Route path="/notes/sorting/quick" element={<QuickSort/>} />
 
         <Route path="*" element={<PageNotFound/>} />
-
-
-
+        
       </Routes>
       </main>
 

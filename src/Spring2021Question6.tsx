@@ -1,32 +1,31 @@
 import './App.css'
-import "highlight.js/styles/default.css";
-import hljs from "highlight.js";
-import { useEffect } from 'react'
+import Solution from './Solution'
+
 
 function Spring2021Question6() {
 
-    useEffect(() => {
-        hljs.highlightAll();
-    }, [])
 
     return (
 
-        <main>
+        <Solution
 
-        <h2>spring 2021 question 6 🥞</h2>
+        name="spring 2021 question 6 🥞"
 
-        <hr/>
+        question=
+        
+        {
      
-        <p>Write Java code to do the following: Read from the keyboard an unknown number of
-            values each of which is between 1 and 100. If a number entered is not between 1 and 100 
-            (except for -1 which ends the input) print an error message. 
-            When a -1 is read in, stop the loop and print which of the numbers between 1 and 100 were not read in.
-        </p>
+        <>
+        Write Java code to do the following: Read from the keyboard an unknown number of
+        values each of which is between 1 and 100. If a number entered is not between 1 and 100 
+        (except for -1 which ends the input) print an error message. 
+        When a -1 is read in, stop the loop and print which of the numbers between 1 and 100 were not read in.
+        </>
 
-            <pre>
-                <code className="language-java">
-                {
-                `import java.util.Scanner;
+        }
+
+        code={
+`import java.util.Scanner;
 public class Spring2021Question6 {
 
     public static void main(String[] args) {
@@ -62,10 +61,9 @@ public class Spring2021Question6 {
     }
 
 }`}
-                </code>
-            </pre>
 
-        </main>
+    />
+             
     )
 }
 

@@ -1,27 +1,19 @@
 import './App.css'
-import "highlight.js/styles/default.css";
-import hljs from "highlight.js";
-import { useEffect } from 'react'
+import Solution from './Solution'
 
-
-function Fall2020Question2() {
-
-    useEffect(() => {
-        hljs.highlightAll();
-    }, [])
+function Fall2020Question7() {
 
     return (
 
-        <main>
+        <Solution
+        
+        name="fall 2020 question 7 🥞"
+        question={<></>}
+    
+        code=
 
-            <h2>fall 2020 question 7 🥞</h2>
-
-            <hr/>
-
-            <pre>
-                <code className="language-java">
-                {
-                `import java.util.Scanner;
+        {
+        `import java.util.Scanner;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.File;
@@ -164,12 +156,15 @@ public class Fall2020Question7 {
             }
         }
     }
-}`}
-                </code>
-            </pre>
-
-        </main>
+}`
+        }
+    
+        />
     )
-}
 
-export default Fall2020Question2
+}
+export default Fall2020Question7
+
+
+
+

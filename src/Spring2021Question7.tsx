@@ -1,26 +1,18 @@
 import './App.css'
-import "highlight.js/styles/default.css";
-import hljs from "highlight.js";
-import { useEffect } from 'react'
+import Solution from './Solution'
 
 function Spring2021Question7() {
 
-    useEffect(() => {
-        hljs.highlightAll();
-    }, [])
-
     return (
 
-        <main>
+        <Solution
 
-        <h2>spring 2021 question 7 🥞</h2>
+        name="spring 2021 question 7 🥞"
 
-        <hr/>
-     
-            <pre>
-                <code className="language-java">
-                {
-                `import java.util.Scanner;
+        question={<></>}
+
+        code={
+`import java.util.Scanner;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -155,10 +147,7 @@ public class Spring2021Question7 {
 
 }
  `}
-                </code>
-            </pre>
-
-        </main>
+    />
     )
 }
 

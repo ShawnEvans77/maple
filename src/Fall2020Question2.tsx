@@ -1,37 +1,34 @@
 import './App.css'
-import "highlight.js/styles/default.css";
-import hljs from "highlight.js";
-import { useEffect } from 'react'
+import Solution from './Solution'
 
 function Fall2020Question2() {
 
-    useEffect(() => {
-        hljs.highlightAll();
-    })
-
     return (
 
-        <main>
+        <Solution
+        
+        name="fall 2020 question 2 🥞"
+        question=
 
-            <h2>fall 2020 question 1 🥞</h2>
-            <hr/>
-
-            <p>
-                Assume the existence of an <code>int</code> variable called inches.
-                 Compute and print how many miles, yards, feet and inches that number represents.
-            </p>
-            
-            
-            <p>The rules are: 1 foot equal 12 inches, 36 inches equal 1 yard, and 5280 feet equals 1 mile. </p>
+        {
+        <>
+        <p>
+        Assume the existence of an <code>int</code> variable called inches.
+        Compute and print how many miles, yards, feet and inches that number represents.
+        </p>
+             
+        <p>The rules are: 1 foot equal 12 inches, 36 inches equal 1 yard, and 5280 feet equals 1 mile. </p>
                 
-            <p>For example, if <code>int inches = 245897</code>, then the output is as follows:</p>
+        <p>For example, if <code>int inches = 245897</code>, then the output is as follows:</p>
 
-            <code>245897 inches equals 3 miles 1550 yards 1 foot and 5 inches</code>
-    
-            <pre>
-                <code className="language-java">
-                {
-                `    public class Fall2020Question2 {
+        <code>245897 inches equals 3 miles 1550 yards 1 foot and 5 inches</code>
+        </>
+        }
+
+        code=
+
+            {
+        `public class Fall2020Question2 {
         public static void main(String[] args) {
             int inches = 245897;
             int miles = inches / (5280*12);
@@ -47,12 +44,12 @@ function Fall2020Question2() {
             System.out.printf("%d inches equals %d miles %d yards %d foot and %d inches\\n", 
             inches, miles, yards, feet, remainingInches);
         }
+        
     }`}
-                </code>
-            </pre>
-
-        </main>
+    
+        />
     )
+
 }
 
 export default Fall2020Question2
