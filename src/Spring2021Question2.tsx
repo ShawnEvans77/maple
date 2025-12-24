@@ -11,12 +11,17 @@ function Spring2021Question7() {
 
         question={
         <>
-        Write Java code to read strings of lower-case letters from the keyboard and count the
-        number of vowels in each word. (vowels are a,e,i,o and u). When all strings have been read in,
-        print the string that has the largest number of vowels (duplicates included) and how many vowels
-        were in the string. When more than one string has the greatest number of vowels, print the first
-        string found with that number. For example, with input of she groceries yourselves here
-        radio, the correct answer would be: groceries – 4 vowels.
+        <p>Write Java code to read strings of lower-case letters from the keyboard and count the
+        number of vowels in each word. (vowels are a,e,i,o and u).</p>
+        
+        <p>When all strings have been read in, print the string that has the largest number of vowels (duplicates included) 
+        and how many vowels were in the string. When more than one string has the greatest number of vowels, print the first
+        string found with that number.</p> 
+        
+        <p>For example,</p>
+        
+        <p>Given input: <code>she of groceries yourselves here radio</code></p>
+        <p>The output is: <code>groceries – 4 vowels</code></p>
         </>
         }
 
