@@ -16,7 +16,7 @@ function Notes() {
         <ol>
 
             <li><Link to="sorting">sorting</Link></li>
-            <li>searching</li>
+            <li><Link to ="searching">searching</Link></li>
 
         </ol>
         </div>

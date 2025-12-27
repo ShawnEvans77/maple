@@ -22,6 +22,8 @@ import InsertionSort from './InsertionSort'
 import QuickSort from './QuickSort'
 import PageNotFound from './PageNotFound'
 import HeapSort from './HeapSort'
+import BinarySearch from './BinarySearch'
+import Searching from './Searching'
 
 function App() {
 
@@ -57,6 +59,9 @@ function App() {
         <Route path="/notes/sorting/insertion" element={<InsertionSort/>} />
         <Route path="/notes/sorting/quick" element={<QuickSort/>} />
         <Route path="/notes/sorting/heap" element={<HeapSort/>} />
+
+        <Route path="/notes/searching" element={<Searching/>} />
+        <Route path="/notes/searching/binary" element={<BinarySearch/>} />
 
         <Route path="*" element={<PageNotFound/>} />
         
